@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating and Inserting DOM Elements</title>
+  </head>
+  <script type="application/javascript">
+  </script>
+  <body>
+    const element = document.createElement("div");
+    document.body.append(element);
+    const ul = document.createElement("ul");
+    for (let i = 0; i < 3; i++) {
+      const li = document.createElement("li");
+      li.textContent = (i + 1).toString();
+      ul.append(li);const element = document.getElementById("main");
+      element.style.height = "300px";
+      element.style.backgroundColor = "#27647B";
+      element.textContent = "You've changed what's on the screen!
+      element.style.fontSize = "24px";
+      element.style.marginLeft = "30px";
+      element.style.lineHeight = 2;
+      element.append(ul);
+      element.className = "pet-listing dog";
+      element.classList.remove("dog");
+     element.classList.add("cat", "sale");
+     <main id="main" class="pet-listing cat sale"></main>
+      <main id="main" class="pet-listing dog"></main>
+    <main id="main"></main>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
